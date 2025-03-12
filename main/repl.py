@@ -1,11 +1,22 @@
+import os
+from dotenv import load_dotenv
 from calculator.operations import Operations
 from calculator.history import CalculationHistory
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Get environment variables
+LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")  # Default to INFO if not set
+HISTORY_FILE = os.getenv("HISTORY_FILE", "history.csv")
 
 class CalculatorREPL:
     """A simple command-line REPL for the calculator."""
 
     def __init__(self):
         self.history = CalculationHistory()
+        print(f"Logging Level: {LOG_LEVEL}")
+        print(f"History File: {HISTORY_FILE}")
 
     def start(self):
         """Start the REPL loop."""
