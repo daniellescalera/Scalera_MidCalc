@@ -1,64 +1,108 @@
 import os
+import importlib
 from dotenv import load_dotenv
 from calculator.operations import Operations
+from calculator.calculations import Calculation
 from calculator.history import CalculationHistory
-from calculator.logger import logger  # Import the logger
+from calculator.logger import logger
 
 # Load environment variables
 load_dotenv()
 
-LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
-HISTORY_FILE = os.getenv("HISTORY_FILE", "history.csv")
+environment = os.getenv("ENVIRONMENT", "Production")  # Default to "Production" if missing
+print(f"\n🌍 Running in {environment} mode")  # Display environment mode
 
 class CalculatorREPL:
-    """A simple command-line REPL for the calculator."""
+    """A command-line REPL for the calculator with commands and arithmetic operations."""
 
     def __init__(self):
-        self.history = CalculationHistory()
-        logger.info("Calculator REPL started")  # Log start of REPL
-        print(f"Logging Level: {LOG_LEVEL}")
-        print(f"History File: {HISTORY_FILE}")
+        self.plugins = self.load_plugins()
+        logger.info("Calculator REPL started")  # Log REPL startup
+
+    def load_plugins(self):
+        """Dynamically loads all plugins from the plugins/ folder."""
+        plugins = {}
+        plugin_dir = "plugins"
+        if os.path.exists(plugin_dir):
+            for filename in os.listdir(plugin_dir):
+                if filename.endswith(".py") and filename != "__init__.py":
+                    module_name = f"plugins.{filename[:-3]}"  # Remove .py extension
+                    module = importlib.import_module(module_name)
+                    if hasattr(module, "plugin_info"):
+                        info = module.plugin_info()
+                        plugins[info["command"]] = info
+        return plugins
+
+    def show_menu(self):
+        """Displays available commands including plugins."""
+        print("\nAvailable Commands:")
+        print("  add, subtract, multiply, divide - Perform calculations")
+        print("  history - View past calculations")
+        print("  clear - Clear history")
+        print("  save - Save history to file")
+        print("  load - Load history from file")
+        print("  menu - Show this menu")
+        print("  exit - Quit the calculator")
+        
+        # List plugin commands
+        if self.plugins:
+            print("\nPlugin Commands:")
+            for command, plugin in self.plugins.items():
+                print(f"  {command} - {plugin['description']}")
 
     def start(self):
-        """Start the REPL loop."""
-        print("Welcome to the Calculator REPL! Type 'exit' to quit.")
-
-        while True:
-            command = input("Enter operation (add, subtract, multiply, divide, history, exit): ").strip().lower()
-            logger.info(f"User entered command: {command}")
-
-            if command == "exit":
-                logger.info("User exited REPL")
-                print("Goodbye!")
-                break
-            elif command == "history":
-                print(self.history.history)
-                continue
-
+     """Start the REPL loop."""
+    print("\nWelcome to the Advanced Calculator! Type 'menu' for options.")
+    
+    while True:
+        user_input = input("\nEnter operation: ").strip().lower()
+        
+        if user_input in ["exit", "quit"]:
+            print("Goodbye!")
+            logger.info("Calculator REPL exited.")
+            break
+        elif user_input == "menu":
+            self.show_menu()  # ✅ Fix: Ensure menu is correctly referenced
+        elif user_input == "history":
+            """Displays past calculations if available."""
+            if not CalculationHistory.history.empty:
+                print("\n📜 Calculation History:")
+                print(CalculationHistory.history.to_string(index=False))  # ✅ Fix: Display history properly
+            else:
+                print("\n📜 No calculations in history yet.")
+        elif user_input in ["add", "subtract", "multiply", "divide"]:
             try:
-                num1 = input("Enter first number: ").strip()
-                num2 = input("Enter second number: ").strip()
-
-                if command == "add":
-                    result = Operations.add(num1, num2)
-                elif command == "subtract":
-                    result = Operations.subtract(num1, num2)
-                elif command == "multiply":
-                    result = Operations.multiply(num1, num2)
-                elif command == "divide":
-                    result = Operations.divide(num1, num2)
-                else:
-                    logger.warning(f"Invalid command: {command}")
-                    print("Invalid command. Try again.")
-                    continue
-
-                self.history.add_record(command, num1, num2, result)
-                logger.info(f"Performed operation: {command} {num1} {num2} = {result}")
+                num1 = float(input("Enter the first number: ").strip())
+                num2 = float(input("Enter the second number: ").strip())
+                
+                result = getattr(Operations, user_input)(num1, num2)
                 print(f"Result: {result}")
-
+                
+                CalculationHistory.add_record(user_input, num1, num2, result)  # ✅ Ensure correct history function
+            except ValueError:
+                print("Invalid input. Please enter numeric values.")
+                logger.error(f"Invalid input for {user_input} operation.")
             except Exception as e:
-                logger.error(f"Error in REPL: {e}")
                 print(f"Error: {e}")
+                logger.error(f"Operation {user_input} failed: {e}")
+        elif user_input in self.plugins:
+            plugin = self.plugins[user_input]
+            try:
+                num_args = int(input(f"How many numbers does {user_input} need? ").strip())
+                args = [float(input(f"Enter number {i + 1}: ").strip()) for i in range(num_args)]
+                
+                result = plugin["function"](*args)
+                print(f"Result: {result}")
+                CalculationHistory.add_record(user_input, *args, result)
+            except ValueError:
+                print("Invalid input. Please enter numeric values.")
+                logger.error(f"Invalid input for plugin {user_input}.")
+            except Exception as e:
+                print(f"Error: {e}")
+                logger.error(f"Plugin {user_input} failed: {e}")
+        else:
+            print("Unknown command. Type 'menu' to see available commands.")
 
 if __name__ == "__main__":
-    CalculatorREPL().start()
+    repl = CalculatorREPL()
+    repl.start()
