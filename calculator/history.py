@@ -2,27 +2,39 @@ import pandas as pd
 
 class CalculationHistory:
     """Manages calculation history using Pandas."""
+    
+    # ✅ Define history as a class attribute so all instances share it
+    history = pd.DataFrame(columns=["Operation", "Operand1", "Operand2", "Result"])
 
-    def __init__(self):
-        self.history = pd.DataFrame(columns=["Operation", "Operand1", "Operand2", "Result"])
-
-    def add_record(self, operation: str, operand1: float, operand2: float, result: float):
+    @classmethod
+    def add_record(cls, operation: str, operand1: float, operand2: float, result: float):
         """Adds a new calculation record to the history."""
         new_record = pd.DataFrame([[operation, operand1, operand2, result]], 
-                                  columns=self.history.columns)
-        self.history = pd.concat([self.history, new_record], ignore_index=True)
+                                  columns=cls.history.columns)
+        cls.history = pd.concat([cls.history, new_record], ignore_index=True)
 
-    def save_history(self, filename="history.csv"):
+    @classmethod
+    def save_history(cls, filename="history.csv"):
         """Saves history to a CSV file."""
-        self.history.to_csv(filename, index=False)
+        cls.history.to_csv(filename, index=False)
 
-    def load_history(self, filename="history.csv"):
+    @classmethod
+    def load_history(cls, filename="history.csv"):
         """Loads history from a CSV file."""
         try:
-            self.history = pd.read_csv(filename)
+            cls.history = pd.read_csv(filename)
         except FileNotFoundError:
             print("No previous history found.")
 
-    def clear_history(self):
+    @classmethod
+    def clear_history(cls):
         """Clears the calculation history."""
-        self.history = pd.DataFrame(columns=["Operation", "Operand1", "Operand2", "Result"])
+        cls.history = pd.DataFrame(columns=["Operation", "Operand1", "Operand2", "Result"])
+
+    @classmethod
+    def get_last_calculation(cls):
+        """Returns the last calculation from history, if available."""
+        if not cls.history.empty:
+            return cls.history.iloc[-1].to_dict()  # Returns last row as a dictionary
+        else:
+            return "📜 No calculations in history yet."
