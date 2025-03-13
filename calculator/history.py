@@ -2,16 +2,23 @@ import pandas as pd
 
 class CalculationHistory:
     """Manages calculation history using Pandas."""
-    
+
     # ✅ Define history as a class attribute so all instances share it
     history = pd.DataFrame(columns=["Operation", "Operand1", "Operand2", "Result"])
 
     @classmethod
     def add_record(cls, operation: str, operand1: float, operand2: float, result: float):
-        """Adds a new calculation record to the history."""
+        """Adds a new calculation record to the history while handling empty DataFrames properly."""
+        
+        # ✅ Ensure 'new_record' is created inside the method
         new_record = pd.DataFrame([[operation, operand1, operand2, result]], 
                                   columns=cls.history.columns)
-        cls.history = pd.concat([cls.history, new_record], ignore_index=True)
+
+        # ✅ Ensure history is not empty before concatenation
+        if cls.history.empty:
+            cls.history = new_record
+        else:
+            cls.history = pd.concat([cls.history, new_record], ignore_index=True)
 
     @classmethod
     def save_history(cls, filename="history.csv"):
