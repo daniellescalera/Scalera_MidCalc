@@ -15,8 +15,8 @@ class CalculatorREPL:
     """A command-line REPL for the calculator with commands and arithmetic operations."""
 
     def __init__(self):
+        logger.info("Calculator REPL started")  # ✅ Ensure this is the first thing logged
         self.plugins = self.load_plugins()
-        logger.info("Calculator REPL started")
         HistoryFacade.load_history()  # Automatically load history on startup
 
     def load_plugins(self):
@@ -55,7 +55,7 @@ class CalculatorREPL:
 
             if user_input in ["exit", "quit"]:
                 print("Goodbye!")
-                logger.info("Calculator REPL exited.")
+                logger.info("Calculator REPL exited.")  # Ensure exit is logged
                 break
             elif user_input == "menu":
                 self.show_menu()
@@ -82,7 +82,7 @@ class CalculatorREPL:
                         HistoryFacade.add_record(user_input, num1, num2, result)
                 except Exception as e:
                     print(f"Error: {e}")
-                    logger.error(f"Operation {user_input} failed: {e}")
+                    logger.error(f"Operation {user_input} failed: {e}")  # Log failed operation
             elif user_input in self.plugins:
                 plugin = self.plugins[user_input]
                 try:
@@ -94,12 +94,13 @@ class CalculatorREPL:
                     HistoryFacade.add_record(user_input, *args, result)
                 except ValueError:
                     print("Invalid input. Please enter numeric values.")
-                    logger.error(f"Invalid input for plugin {user_input}.")
+                    logger.error(f"Invalid input for plugin {user_input}.")  # Log invalid plugin input
                 except Exception as e:
                     print(f"Error: {e}")
-                    logger.error(f"Plugin {user_input} failed: {e}")
+                    logger.error(f"Plugin {user_input} failed: {e}")  # Log plugin failures
             else:
                 print("Unknown command. Type 'menu' to see available commands.")
+                logger.warning(f"Invalid command: {user_input}")  # Ensure unknown commands are logged
 
 if __name__ == "__main__":
     repl = CalculatorREPL()

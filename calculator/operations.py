@@ -6,30 +6,33 @@ getcontext().prec = 28
 class CalculationStrategy:
     """Base class for all calculation strategies."""
     def calculate(self, a: str, b: str) -> Decimal:
+        """Abstract method that must be implemented by subclasses."""
         raise NotImplementedError("Subclasses must implement the calculate method.")
 
 class AdditionStrategy(CalculationStrategy):
+    """Performs addition operation."""
     def calculate(self, a: str, b: str) -> Decimal:
         return Decimal(a) + Decimal(b)
 
 class SubtractionStrategy(CalculationStrategy):
+    """Performs subtraction operation."""
     def calculate(self, a: str, b: str) -> Decimal:
         return Decimal(a) - Decimal(b)
 
 class MultiplicationStrategy(CalculationStrategy):
+    """Performs multiplication operation."""
     def calculate(self, a: str, b: str) -> Decimal:
         return Decimal(a) * Decimal(b)
 
 class DivisionStrategy(CalculationStrategy):
+    """Performs division operation with error handling."""
     def calculate(self, a: str, b: str) -> Decimal:
         try:
             return Decimal(a) / Decimal(b)
         except InvalidOperation:
-            print("Error: Invalid input. Please enter numeric values.")
-            return None
+            raise ValueError("Invalid input. Please enter numeric values.")  # ✅ Updated: Raise ValueError instead of print
         except ZeroDivisionError:
-            print("Error: Cannot divide by zero.")
-            return None
+            raise ValueError("Cannot divide by zero.")  # ✅ Updated: Raise ValueError instead of print
 
 class Calculator:
     """Uses different calculation strategies dynamically."""
@@ -41,4 +44,5 @@ class Calculator:
         self.strategy = strategy
 
     def execute(self, a: str, b: str) -> Decimal:
+        """Executes the strategy's calculation method."""
         return self.strategy.calculate(a, b)

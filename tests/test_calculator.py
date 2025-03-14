@@ -1,29 +1,47 @@
 import pytest
 from decimal import Decimal
-from calculator.operations import Operations
+from calculator.operations import (
+    CalculationStrategy,
+    AdditionStrategy,
+    SubtractionStrategy,
+    MultiplicationStrategy,
+    DivisionStrategy,
+    Calculator,
+)
 
-def test_add(fake):
-    a, b = fake.pyfloat(min_value=1, max_value=100), fake.pyfloat(min_value=1, max_value=100)
-    assert Operations.add(str(a), str(b)) == Decimal(str(a)) + Decimal(str(b))
+def test_calculation_strategy_not_implemented():
+    """Ensure CalculationStrategy raises NotImplementedError."""
+    strategy = CalculationStrategy()
+    with pytest.raises(NotImplementedError, match="Subclasses must implement the calculate method."):
+        strategy.calculate("1", "2")
 
-def test_subtract(fake):
-    a, b = fake.pyfloat(min_value=1, max_value=100), fake.pyfloat(min_value=1, max_value=100)
-    assert Operations.subtract(str(a), str(b)) == Decimal(str(a)) - Decimal(str(b))
+@pytest.mark.parametrize("strategy_class, a, b, expected", [
+    (AdditionStrategy, "5", "3", Decimal("8")),     # 5 + 3 = 8
+    (SubtractionStrategy, "10", "4", Decimal("6")), # 10 - 4 = 6
+    (MultiplicationStrategy, "2", "3", Decimal("6")), # 2 * 3 = 6
+    (DivisionStrategy, "8", "2", Decimal("4")),     # 8 / 2 = 4
+])
+def test_calculator_operations(strategy_class, a, b, expected):
+    """Test different calculation strategies with Calculator."""
+    strategy = strategy_class()
+    calculator = Calculator(strategy)
+    assert calculator.execute(a, b) == expected
 
-def test_multiply(fake):
-    a, b = fake.pyfloat(min_value=1, max_value=100), fake.pyfloat(min_value=1, max_value=100)
-    assert Operations.multiply(str(a), str(b)) == Decimal(str(a)) * Decimal(str(b))
-
-def test_divide(fake):
-    a = fake.pyfloat(min_value=1, max_value=100)
-    b = 0
-    while b == 0:  # Ensure we never test division by zero here
-        b = fake.pyfloat(min_value=1, max_value=100)
-    
-    assert Operations.divide(str(a), str(b)) == Decimal(str(a)) / Decimal(str(b))
-
+# ✅ Fix: Expect ValueError instead of None
 def test_divide_by_zero():
-    assert Operations.divide("10", "0") is None  # Should return None instead of crashing
+    """Ensure division by zero raises ValueError."""
+    calculator = Calculator(DivisionStrategy())
+    with pytest.raises(ValueError, match="Cannot divide by zero."):
+        calculator.execute("10", "0")
 
-def test_invalid_input():
-    assert Operations.divide("abc", "2") is None  # Should handle non-numeric input
+# ✅ Fix: Expect ValueError for invalid input
+@pytest.mark.parametrize("a, b", [
+    ("abc", "5"),  # Non-numeric input
+    ("5", "xyz"),
+    ("abc", "xyz"),
+])
+def test_division_invalid_input(a, b):
+    """Ensure DivisionStrategy raises ValueError for invalid input."""
+    calculator = Calculator(DivisionStrategy())
+    with pytest.raises(ValueError, match="Invalid input. Please enter numeric values."):
+        calculator.execute(a, b)

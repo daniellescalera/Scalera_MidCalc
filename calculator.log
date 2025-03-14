@@ -32,3 +32,409 @@
 2025-03-13 21:45:09,155 - INFO - Calculator REPL exited.
 2025-03-13 22:15:11,773 - INFO - Calculator REPL started
 2025-03-13 22:15:36,808 - INFO - Calculator REPL exited.
+2025-03-14 11:53:52,634 - INFO - Calculator REPL started
+2025-03-14 11:53:52,644 - INFO - Calculator REPL exited.
+2025-03-14 11:53:53,708 - INFO - Calculator REPL started
+2025-03-14 11:53:53,711 - WARNING - Invalid command: invalid_command
+2025-03-14 11:53:53,715 - INFO - Calculator REPL started
+2025-03-14 11:53:53,717 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 11:57:28,632 - INFO - Calculator REPL started
+2025-03-14 11:57:28,653 - INFO - Calculator REPL exited.
+2025-03-14 11:57:29,723 - INFO - Calculator REPL started
+2025-03-14 11:57:29,728 - WARNING - Invalid command: invalid_command
+2025-03-14 11:57:29,730 - INFO - Calculator REPL started
+2025-03-14 11:57:29,734 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 11:59:12,807 - INFO - Calculator REPL started
+2025-03-14 11:59:14,360 - INFO - Calculator REPL started
+2025-03-14 11:59:14,365 - WARNING - Invalid command: invalid_command
+2025-03-14 11:59:14,367 - INFO - Calculator REPL started
+2025-03-14 11:59:14,371 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:02:16,669 - INFO - Calculator REPL started
+2025-03-14 12:02:17,782 - INFO - Calculator REPL started
+2025-03-14 12:02:17,790 - WARNING - Invalid command: invalid_command
+2025-03-14 12:02:17,794 - INFO - Calculator REPL started
+2025-03-14 12:02:17,798 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:03:31,043 - INFO - Calculator REPL started
+2025-03-14 12:03:53,989 - INFO - Calculator REPL exited.
+2025-03-14 12:03:55,586 - INFO - Calculator REPL started
+2025-03-14 12:03:55,590 - WARNING - Invalid command: invalid_command
+2025-03-14 12:03:55,592 - INFO - Calculator REPL started
+2025-03-14 12:03:55,600 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:05:38,866 - INFO - Calculator REPL started
+2025-03-14 12:06:22,718 - INFO - Calculator REPL exited.
+2025-03-14 12:06:27,654 - INFO - Calculator REPL started
+2025-03-14 12:06:27,658 - WARNING - Invalid command: invalid_command
+2025-03-14 12:06:27,660 - INFO - Calculator REPL started
+2025-03-14 12:06:27,668 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:07:09,372 - INFO - Calculator REPL started
+2025-03-14 12:07:09,388 - INFO - Calculator REPL exited.
+2025-03-14 12:07:10,766 - INFO - Calculator REPL started
+2025-03-14 12:07:10,769 - WARNING - Invalid command: invalid_command
+2025-03-14 12:07:10,771 - INFO - Calculator REPL started
+2025-03-14 12:07:10,775 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:09:35,537 - INFO - Calculator REPL started
+2025-03-14 12:09:35,553 - INFO - Calculator REPL exited.
+2025-03-14 12:09:37,115 - INFO - Calculator REPL started
+2025-03-14 12:09:37,118 - WARNING - Invalid command: invalid_command
+2025-03-14 12:09:37,120 - INFO - Calculator REPL started
+2025-03-14 12:09:37,128 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:13:33,878 - INFO - Calculator REPL started
+2025-03-14 12:13:33,913 - INFO - Calculator REPL exited.
+2025-03-14 12:13:35,440 - INFO - Calculator REPL started
+2025-03-14 12:13:35,444 - WARNING - Invalid command: invalid_command
+2025-03-14 12:13:35,446 - INFO - Calculator REPL started
+2025-03-14 12:13:35,456 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:15:36,447 - INFO - Calculator REPL started
+2025-03-14 12:15:36,466 - INFO - Calculator REPL exited.
+2025-03-14 12:15:38,261 - INFO - Calculator REPL started
+2025-03-14 12:15:38,265 - WARNING - Invalid command: invalid_command
+2025-03-14 12:15:38,267 - INFO - Calculator REPL started
+2025-03-14 12:15:38,271 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:17:40,568 - INFO - Calculator REPL started
+2025-03-14 12:17:40,590 - INFO - Calculator REPL exited.
+2025-03-14 12:17:42,945 - INFO - Calculator REPL started
+2025-03-14 12:17:42,952 - WARNING - Invalid command: invalid_command
+2025-03-14 12:17:42,954 - INFO - Calculator REPL started
+2025-03-14 12:17:42,964 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:19:12,588 - INFO - Calculator REPL started
+2025-03-14 12:19:12,606 - INFO - Calculator REPL exited.
+2025-03-14 12:19:14,397 - INFO - Calculator REPL started
+2025-03-14 12:19:14,412 - WARNING - Invalid command: invalid_command
+2025-03-14 12:19:14,414 - INFO - Calculator REPL started
+2025-03-14 12:19:14,420 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:22:36,531 - INFO - Calculator REPL started
+2025-03-14 12:22:36,547 - INFO - Calculator REPL exited.
+2025-03-14 12:22:38,224 - INFO - Calculator REPL started
+2025-03-14 12:22:38,228 - WARNING - Invalid command: invalid_command
+2025-03-14 12:22:38,229 - INFO - Calculator REPL started
+2025-03-14 12:22:38,233 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:24:04,166 - INFO - Calculator REPL started
+2025-03-14 12:24:04,205 - INFO - Calculator REPL exited.
+2025-03-14 12:24:06,485 - INFO - Calculator REPL started
+2025-03-14 12:24:06,489 - WARNING - Invalid command: invalid_command
+2025-03-14 12:24:06,491 - INFO - Calculator REPL started
+2025-03-14 12:24:06,495 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:25:44,820 - INFO - Calculator REPL started
+2025-03-14 12:25:44,836 - INFO - Calculator REPL exited.
+2025-03-14 12:25:46,320 - INFO - Calculator REPL started
+2025-03-14 12:25:46,324 - WARNING - Invalid command: invalid_command
+2025-03-14 12:25:46,325 - INFO - Calculator REPL started
+2025-03-14 12:25:46,328 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:27:39,471 - INFO - Calculator REPL started
+2025-03-14 12:27:39,497 - INFO - Calculator REPL exited.
+2025-03-14 12:27:40,999 - INFO - Calculator REPL started
+2025-03-14 12:27:41,003 - WARNING - Invalid command: invalid_command
+2025-03-14 12:27:41,004 - INFO - Calculator REPL started
+2025-03-14 12:27:41,007 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:29:57,361 - INFO - Calculator REPL started
+2025-03-14 12:29:57,377 - INFO - Calculator REPL exited.
+2025-03-14 12:29:58,923 - INFO - Calculator REPL started
+2025-03-14 12:29:58,927 - WARNING - Invalid command: invalid_command
+2025-03-14 12:29:58,928 - INFO - Calculator REPL started
+2025-03-14 12:29:58,934 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:32:58,694 - INFO - Calculator REPL started
+2025-03-14 12:32:58,709 - INFO - Calculator REPL exited.
+2025-03-14 12:33:00,238 - INFO - Calculator REPL started
+2025-03-14 12:33:00,242 - WARNING - Invalid command: invalid_command
+2025-03-14 12:33:00,243 - INFO - Calculator REPL started
+2025-03-14 12:33:00,247 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:33:56,301 - INFO - Calculator REPL started
+2025-03-14 12:33:56,330 - INFO - Calculator REPL exited.
+2025-03-14 12:33:57,918 - INFO - Calculator REPL started
+2025-03-14 12:33:57,922 - WARNING - Invalid command: invalid_command
+2025-03-14 12:33:57,923 - INFO - Calculator REPL started
+2025-03-14 12:33:57,927 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:33:57,928 - INFO - Calculator REPL started
+2025-03-14 12:33:57,938 - INFO - Calculator REPL started
+2025-03-14 12:33:57,942 - INFO - Calculator REPL exited.
+2025-03-14 12:33:57,945 - INFO - Calculator REPL started
+2025-03-14 12:33:57,951 - INFO - Calculator REPL started
+2025-03-14 12:33:57,957 - INFO - Calculator REPL started
+2025-03-14 12:33:57,965 - INFO - Calculator REPL exited.
+2025-03-14 12:33:57,968 - INFO - Calculator REPL started
+2025-03-14 12:33:57,974 - WARNING - Invalid command: invalid_command
+2025-03-14 12:33:57,975 - INFO - Calculator REPL exited.
+2025-03-14 12:37:22,401 - INFO - Calculator REPL started
+2025-03-14 12:37:22,445 - INFO - Calculator REPL exited.
+2025-03-14 12:37:24,566 - INFO - Calculator REPL started
+2025-03-14 12:37:24,571 - WARNING - Invalid command: invalid_command
+2025-03-14 12:37:24,572 - INFO - Calculator REPL started
+2025-03-14 12:37:24,576 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:37:24,579 - INFO - Calculator REPL started
+2025-03-14 12:37:24,590 - INFO - Calculator REPL started
+2025-03-14 12:37:24,602 - INFO - Calculator REPL exited.
+2025-03-14 12:37:24,627 - INFO - Calculator REPL started
+2025-03-14 12:37:24,645 - INFO - Calculator REPL started
+2025-03-14 12:37:24,660 - INFO - Calculator REPL started
+2025-03-14 12:37:24,672 - INFO - Calculator REPL exited.
+2025-03-14 12:37:24,674 - INFO - Calculator REPL started
+2025-03-14 12:37:24,688 - WARNING - Invalid command: invalid_command
+2025-03-14 12:37:24,688 - INFO - Calculator REPL exited.
+2025-03-14 12:37:43,239 - INFO - Calculator REPL started
+2025-03-14 12:37:43,254 - INFO - Calculator REPL exited.
+2025-03-14 12:37:44,690 - INFO - Calculator REPL started
+2025-03-14 12:37:44,694 - WARNING - Invalid command: invalid_command
+2025-03-14 12:37:44,696 - INFO - Calculator REPL started
+2025-03-14 12:37:44,699 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:39:15,357 - INFO - Calculator REPL started
+2025-03-14 12:39:15,388 - INFO - Calculator REPL exited.
+2025-03-14 12:39:17,090 - INFO - Calculator REPL started
+2025-03-14 12:39:17,094 - WARNING - Invalid command: invalid_command
+2025-03-14 12:39:17,095 - INFO - Calculator REPL started
+2025-03-14 12:39:17,100 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:39:17,105 - INFO - Calculator REPL started
+2025-03-14 12:39:17,116 - INFO - Calculator REPL started
+2025-03-14 12:39:17,120 - INFO - Calculator REPL exited.
+2025-03-14 12:39:17,122 - INFO - Calculator REPL started
+2025-03-14 12:39:17,130 - INFO - Calculator REPL started
+2025-03-14 12:39:17,139 - INFO - Calculator REPL started
+2025-03-14 12:39:17,145 - INFO - Calculator REPL exited.
+2025-03-14 12:39:17,147 - INFO - Calculator REPL started
+2025-03-14 12:39:17,153 - WARNING - Invalid command: invalid_command
+2025-03-14 12:39:17,153 - INFO - Calculator REPL exited.
+2025-03-14 12:41:24,426 - INFO - Calculator REPL started
+2025-03-14 12:41:24,467 - INFO - Calculator REPL exited.
+2025-03-14 12:41:26,426 - INFO - Calculator REPL started
+2025-03-14 12:41:26,434 - WARNING - Invalid command: invalid_command
+2025-03-14 12:41:26,436 - INFO - Calculator REPL started
+2025-03-14 12:41:26,441 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:44:40,851 - INFO - Calculator REPL started
+2025-03-14 12:44:40,877 - INFO - Calculator REPL exited.
+2025-03-14 12:44:42,626 - INFO - Calculator REPL started
+2025-03-14 12:44:42,631 - WARNING - Invalid command: invalid_command
+2025-03-14 12:44:42,632 - INFO - Calculator REPL started
+2025-03-14 12:44:42,636 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 12:49:56,830 - INFO - Calculator REPL started
+2025-03-14 12:49:56,846 - INFO - Calculator REPL exited.
+2025-03-14 12:49:58,382 - INFO - Calculator REPL started
+2025-03-14 12:49:58,386 - WARNING - Invalid command: invalid_command
+2025-03-14 12:49:58,387 - INFO - Calculator REPL started
+2025-03-14 12:49:58,391 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:05:00,874 - INFO - Calculator REPL started
+2025-03-14 13:05:00,903 - INFO - Calculator REPL exited.
+2025-03-14 13:05:03,446 - INFO - Calculator REPL started
+2025-03-14 13:05:03,450 - WARNING - Invalid command: invalid_command
+2025-03-14 13:05:03,452 - INFO - Calculator REPL started
+2025-03-14 13:05:03,455 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:22:21,061 - INFO - Calculator REPL started
+2025-03-14 13:22:21,076 - INFO - Calculator REPL exited.
+2025-03-14 13:22:22,533 - INFO - Calculator REPL started
+2025-03-14 13:22:22,537 - WARNING - Invalid command: invalid_command
+2025-03-14 13:22:22,538 - INFO - Calculator REPL started
+2025-03-14 13:22:22,541 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:24:15,230 - INFO - Calculator REPL started
+2025-03-14 13:24:15,246 - INFO - Calculator REPL exited.
+2025-03-14 13:24:17,008 - INFO - Calculator REPL started
+2025-03-14 13:24:17,012 - WARNING - Invalid command: invalid_command
+2025-03-14 13:24:17,013 - INFO - Calculator REPL started
+2025-03-14 13:24:17,017 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:27:30,541 - INFO - Calculator REPL started
+2025-03-14 13:27:30,556 - INFO - Calculator REPL exited.
+2025-03-14 13:27:32,144 - INFO - Calculator REPL started
+2025-03-14 13:27:32,147 - WARNING - Invalid command: invalid_command
+2025-03-14 13:27:32,149 - INFO - Calculator REPL started
+2025-03-14 13:27:32,152 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:30:53,142 - INFO - Calculator REPL started
+2025-03-14 13:30:53,158 - INFO - Calculator REPL exited.
+2025-03-14 13:30:54,577 - INFO - Calculator REPL started
+2025-03-14 13:30:54,589 - WARNING - Invalid command: invalid_command
+2025-03-14 13:30:54,594 - INFO - Calculator REPL started
+2025-03-14 13:30:54,599 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:34:24,840 - INFO - Calculator REPL started
+2025-03-14 13:34:24,876 - INFO - Calculator REPL exited.
+2025-03-14 13:34:26,485 - INFO - Calculator REPL started
+2025-03-14 13:34:26,489 - WARNING - Invalid command: invalid_command
+2025-03-14 13:34:26,490 - INFO - Calculator REPL started
+2025-03-14 13:34:26,494 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:38:14,279 - INFO - Calculator REPL started
+2025-03-14 13:38:14,325 - INFO - Calculator REPL exited.
+2025-03-14 13:38:16,033 - INFO - Calculator REPL started
+2025-03-14 13:38:16,040 - WARNING - Invalid command: invalid_command
+2025-03-14 13:38:16,040 - INFO - Calculator REPL exited.
+2025-03-14 13:38:16,043 - INFO - Calculator REPL started
+2025-03-14 13:38:16,048 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:38:16,048 - INFO - Calculator REPL exited.
+2025-03-14 13:39:04,282 - INFO - Calculator REPL started
+2025-03-14 13:39:04,300 - INFO - Calculator REPL exited.
+2025-03-14 13:39:06,360 - INFO - Calculator REPL started
+2025-03-14 13:39:06,366 - WARNING - Invalid command: invalid_command
+2025-03-14 13:39:06,366 - INFO - Calculator REPL exited.
+2025-03-14 13:39:06,369 - INFO - Calculator REPL started
+2025-03-14 13:39:06,388 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:39:06,388 - INFO - Calculator REPL exited.
+2025-03-14 13:42:04,665 - INFO - Calculator REPL started
+2025-03-14 13:42:04,687 - INFO - Calculator REPL exited.
+2025-03-14 13:42:06,295 - INFO - Calculator REPL started
+2025-03-14 13:42:06,299 - WARNING - Invalid command: invalid_command
+2025-03-14 13:42:06,299 - INFO - Calculator REPL exited.
+2025-03-14 13:42:06,302 - INFO - Calculator REPL started
+2025-03-14 13:42:06,307 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:42:06,309 - INFO - Calculator REPL exited.
+2025-03-14 13:44:21,412 - INFO - Calculator REPL started
+2025-03-14 13:44:21,428 - INFO - Calculator REPL exited.
+2025-03-14 13:44:23,088 - INFO - Calculator REPL started
+2025-03-14 13:44:23,091 - WARNING - Invalid command: invalid_command
+2025-03-14 13:44:23,092 - INFO - Calculator REPL exited.
+2025-03-14 13:44:23,096 - INFO - Calculator REPL started
+2025-03-14 13:44:23,102 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:44:23,102 - INFO - Calculator REPL exited.
+2025-03-14 13:46:05,482 - INFO - Calculator REPL started
+2025-03-14 13:46:05,500 - INFO - Calculator REPL exited.
+2025-03-14 13:46:07,786 - INFO - Calculator REPL started
+2025-03-14 13:46:07,790 - WARNING - Invalid command: invalid_command
+2025-03-14 13:46:07,790 - INFO - Calculator REPL exited.
+2025-03-14 13:46:07,793 - INFO - Calculator REPL started
+2025-03-14 13:46:07,799 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:46:07,800 - INFO - Calculator REPL exited.
+2025-03-14 13:47:58,415 - INFO - Calculator REPL started
+2025-03-14 13:47:58,429 - INFO - Calculator REPL exited.
+2025-03-14 13:47:58,431 - INFO - Calculator REPL started
+2025-03-14 13:47:58,440 - WARNING - Invalid command: invalid_command
+2025-03-14 13:47:58,441 - INFO - Calculator REPL exited.
+2025-03-14 13:47:58,443 - INFO - Calculator REPL started
+2025-03-14 13:47:58,447 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:47:58,447 - INFO - Calculator REPL exited.
+2025-03-14 13:50:32,708 - INFO - Calculator REPL started
+2025-03-14 13:50:32,731 - INFO - Calculator REPL exited.
+2025-03-14 13:50:32,736 - INFO - Calculator REPL started
+2025-03-14 13:50:32,747 - WARNING - Invalid command: invalid_command
+2025-03-14 13:50:32,747 - INFO - Calculator REPL exited.
+2025-03-14 13:50:32,750 - INFO - Calculator REPL started
+2025-03-14 13:50:32,764 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:50:32,764 - INFO - Calculator REPL exited.
+2025-03-14 13:50:32,767 - INFO - Calculator REPL started
+2025-03-14 13:50:32,778 - INFO - Calculator REPL started
+2025-03-14 13:50:32,787 - INFO - Calculator REPL exited.
+2025-03-14 13:50:32,792 - INFO - Calculator REPL started
+2025-03-14 13:50:32,802 - INFO - Calculator REPL started
+2025-03-14 13:50:32,812 - INFO - Calculator REPL started
+2025-03-14 13:50:32,818 - INFO - Calculator REPL exited.
+2025-03-14 13:50:32,823 - INFO - Calculator REPL started
+2025-03-14 13:50:32,830 - WARNING - Invalid command: invalid_command
+2025-03-14 13:50:32,830 - INFO - Calculator REPL exited.
+2025-03-14 13:55:18,077 - INFO - Calculator REPL started
+2025-03-14 13:55:18,115 - INFO - Calculator REPL exited.
+2025-03-14 13:55:18,120 - INFO - Calculator REPL started
+2025-03-14 13:55:18,129 - WARNING - Invalid command: invalid_command
+2025-03-14 13:55:18,130 - INFO - Calculator REPL exited.
+2025-03-14 13:55:18,132 - INFO - Calculator REPL started
+2025-03-14 13:55:18,143 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 13:55:18,144 - INFO - Calculator REPL exited.
+2025-03-14 13:55:18,146 - INFO - Calculator REPL started
+2025-03-14 13:55:18,158 - INFO - Calculator REPL started
+2025-03-14 13:55:18,165 - INFO - Calculator REPL exited.
+2025-03-14 13:55:18,168 - INFO - Calculator REPL started
+2025-03-14 13:55:18,178 - INFO - Calculator REPL started
+2025-03-14 13:55:18,186 - INFO - Calculator REPL started
+2025-03-14 13:55:18,194 - INFO - Calculator REPL exited.
+2025-03-14 13:55:18,196 - INFO - Calculator REPL started
+2025-03-14 13:55:18,206 - WARNING - Invalid command: invalid_command
+2025-03-14 13:55:18,206 - INFO - Calculator REPL exited.
+2025-03-14 14:00:29,836 - INFO - Calculator REPL started
+2025-03-14 14:00:29,865 - INFO - Calculator REPL exited.
+2025-03-14 14:00:29,868 - INFO - Calculator REPL started
+2025-03-14 14:00:29,874 - WARNING - Invalid command: invalid_command
+2025-03-14 14:00:29,874 - INFO - Calculator REPL exited.
+2025-03-14 14:00:29,877 - INFO - Calculator REPL started
+2025-03-14 14:00:29,884 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 14:00:29,884 - INFO - Calculator REPL exited.
+2025-03-14 14:00:29,887 - INFO - Calculator REPL started
+2025-03-14 14:00:29,894 - INFO - Calculator REPL started
+2025-03-14 14:00:29,903 - INFO - Calculator REPL exited.
+2025-03-14 14:00:29,905 - INFO - Calculator REPL started
+2025-03-14 14:00:29,914 - INFO - Calculator REPL started
+2025-03-14 14:00:29,922 - INFO - Calculator REPL started
+2025-03-14 14:00:29,928 - INFO - Calculator REPL exited.
+2025-03-14 14:00:29,931 - INFO - Calculator REPL started
+2025-03-14 14:00:29,937 - WARNING - Invalid command: invalid_command
+2025-03-14 14:00:29,938 - INFO - Calculator REPL exited.
+2025-03-14 14:06:15,182 - INFO - Calculator REPL started
+2025-03-14 14:06:15,229 - INFO - Calculator REPL exited.
+2025-03-14 14:06:15,232 - INFO - Calculator REPL started
+2025-03-14 14:06:15,240 - WARNING - Invalid command: invalid_command
+2025-03-14 14:06:15,240 - INFO - Calculator REPL exited.
+2025-03-14 14:06:15,243 - INFO - Calculator REPL started
+2025-03-14 14:06:15,252 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 14:06:15,252 - INFO - Calculator REPL exited.
+2025-03-14 14:06:15,255 - INFO - Calculator REPL started
+2025-03-14 14:06:15,270 - INFO - Calculator REPL started
+2025-03-14 14:06:15,280 - INFO - Calculator REPL exited.
+2025-03-14 14:06:15,309 - INFO - Calculator REPL started
+2025-03-14 14:06:15,333 - INFO - Calculator REPL started
+2025-03-14 14:06:15,353 - INFO - Calculator REPL started
+2025-03-14 14:06:15,367 - INFO - Calculator REPL exited.
+2025-03-14 14:06:15,375 - INFO - Calculator REPL started
+2025-03-14 14:06:15,387 - WARNING - Invalid command: invalid_command
+2025-03-14 14:06:15,388 - INFO - Calculator REPL exited.
+2025-03-14 14:07:56,056 - INFO - Calculator REPL started
+2025-03-14 14:07:56,089 - INFO - Calculator REPL exited.
+2025-03-14 14:07:56,094 - INFO - Calculator REPL started
+2025-03-14 14:07:56,100 - WARNING - Invalid command: invalid_command
+2025-03-14 14:07:56,101 - INFO - Calculator REPL exited.
+2025-03-14 14:07:56,104 - INFO - Calculator REPL started
+2025-03-14 14:07:56,112 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 14:07:56,112 - INFO - Calculator REPL exited.
+2025-03-14 14:07:56,115 - INFO - Calculator REPL started
+2025-03-14 14:07:56,127 - INFO - Calculator REPL started
+2025-03-14 14:07:56,135 - INFO - Calculator REPL exited.
+2025-03-14 14:07:56,140 - INFO - Calculator REPL started
+2025-03-14 14:07:56,150 - INFO - Calculator REPL started
+2025-03-14 14:07:56,162 - INFO - Calculator REPL started
+2025-03-14 14:07:56,169 - INFO - Calculator REPL exited.
+2025-03-14 14:07:56,172 - INFO - Calculator REPL started
+2025-03-14 14:07:56,182 - WARNING - Invalid command: invalid_command
+2025-03-14 14:07:56,182 - INFO - Calculator REPL exited.
+2025-03-14 14:12:50,521 - INFO - Calculator REPL started
+2025-03-14 14:12:50,537 - INFO - Calculator REPL exited.
+2025-03-14 14:12:50,543 - INFO - Calculator REPL started
+2025-03-14 14:12:50,548 - WARNING - Invalid command: invalid_command
+2025-03-14 14:12:50,548 - INFO - Calculator REPL exited.
+2025-03-14 14:12:50,550 - INFO - Calculator REPL started
+2025-03-14 14:12:50,560 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 14:12:50,560 - INFO - Calculator REPL exited.
+2025-03-14 14:12:50,563 - INFO - Calculator REPL started
+2025-03-14 14:12:50,575 - INFO - Calculator REPL started
+2025-03-14 14:12:50,586 - INFO - Calculator REPL exited.
+2025-03-14 14:12:50,592 - INFO - Calculator REPL started
+2025-03-14 14:12:50,605 - INFO - Calculator REPL started
+2025-03-14 14:12:50,620 - INFO - Calculator REPL started
+2025-03-14 14:12:50,633 - INFO - Calculator REPL exited.
+2025-03-14 14:12:50,636 - INFO - Calculator REPL started
+2025-03-14 14:12:50,649 - WARNING - Invalid command: invalid_command
+2025-03-14 14:12:50,650 - INFO - Calculator REPL exited.
+2025-03-14 14:14:54,077 - INFO - Calculator REPL started
+2025-03-14 14:14:54,115 - INFO - Calculator REPL exited.
+2025-03-14 14:14:54,118 - INFO - Calculator REPL started
+2025-03-14 14:14:54,125 - WARNING - Invalid command: invalid_command
+2025-03-14 14:14:54,125 - INFO - Calculator REPL exited.
+2025-03-14 14:14:54,128 - INFO - Calculator REPL started
+2025-03-14 14:14:54,135 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 14:14:54,136 - INFO - Calculator REPL exited.
+2025-03-14 14:14:54,138 - INFO - Calculator REPL started
+2025-03-14 14:14:54,146 - INFO - Calculator REPL started
+2025-03-14 14:14:54,157 - INFO - Calculator REPL exited.
+2025-03-14 14:14:54,160 - INFO - Calculator REPL started
+2025-03-14 14:14:54,169 - INFO - Calculator REPL started
+2025-03-14 14:14:54,182 - INFO - Calculator REPL started
+2025-03-14 14:14:54,192 - INFO - Calculator REPL exited.
+2025-03-14 14:14:54,195 - INFO - Calculator REPL started
+2025-03-14 14:14:54,202 - WARNING - Invalid command: invalid_command
+2025-03-14 14:14:54,204 - INFO - Calculator REPL exited.
+2025-03-14 14:16:52,714 - INFO - Calculator REPL started
+2025-03-14 14:16:52,780 - INFO - Calculator REPL exited.
+2025-03-14 14:16:52,784 - INFO - Calculator REPL started
+2025-03-14 14:16:52,792 - WARNING - Invalid command: invalid_command
+2025-03-14 14:16:52,793 - INFO - Calculator REPL exited.
+2025-03-14 14:16:52,797 - INFO - Calculator REPL started
+2025-03-14 14:16:52,806 - ERROR - Operation add failed: [<class 'decimal.ConversionSyntax'>]
+2025-03-14 14:16:52,807 - INFO - Calculator REPL exited.
+2025-03-14 14:16:52,813 - INFO - Calculator REPL started
+2025-03-14 14:16:52,829 - INFO - Calculator REPL started
+2025-03-14 14:16:52,838 - INFO - Calculator REPL exited.
+2025-03-14 14:16:52,846 - INFO - Calculator REPL started
+2025-03-14 14:16:52,858 - INFO - Calculator REPL started
+2025-03-14 14:16:52,871 - INFO - Calculator REPL started
+2025-03-14 14:16:52,884 - INFO - Calculator REPL exited.
+2025-03-14 14:16:52,887 - INFO - Calculator REPL started
+2025-03-14 14:16:52,902 - WARNING - Invalid command: invalid_command
+2025-03-14 14:16:52,903 - INFO - Calculator REPL exited.
