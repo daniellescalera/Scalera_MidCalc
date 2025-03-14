@@ -20,3 +20,5 @@ This project implements several software design patterns to improve maintainabil
 ### 4️ Facade Pattern - **Simplifying access to calculation history**
 - **Description:** The Facade pattern provides a simple interface (`HistoryFacade`) to interact with `CalculationHistory`.
 - **Implementation:** See [`calculator/facade.py`](calculator/facade.py), `HistoryFacade` class.
+
+unlisted youtube video: https://youtu.be/FN500CNc_Go
