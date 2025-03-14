@@ -1,0 +1,12 @@
+2025-03-13 20:28:02,531 - INFO - Calculator REPL started
+2025-03-13 20:28:40,923 - ERROR - Plugin power failed: power() takes 2 positional arguments but 4 were given
+2025-03-13 20:30:21,382 - INFO - Calculator REPL exited.
+2025-03-13 20:44:14,559 - INFO - Calculator REPL started
+2025-03-13 20:44:27,760 - ERROR - Plugin power failed: CalculationHistory.add_record() missing 1 required positional argument: 'result'
+2025-03-13 20:44:36,433 - INFO - Calculator REPL exited.
+2025-03-13 20:50:46,448 - INFO - Calculator REPL started
+2025-03-13 20:51:01,217 - ERROR - Attempted division by zero.
+2025-03-13 20:51:11,303 - INFO - Calculator REPL exited.
+2025-03-13 20:52:48,993 - INFO - Calculator REPL started
+2025-03-13 20:53:33,200 - ERROR - Attempted division by zero.
+2025-03-13 20:54:28,477 - INFO - Calculator REPL exited.
